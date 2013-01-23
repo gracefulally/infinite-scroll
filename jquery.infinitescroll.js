@@ -690,7 +690,7 @@
 
             if (scrollTimeout) { clearTimeout(scrollTimeout); }
             scrollTimeout = setTimeout(function () {
-                $.event.handle.apply(context, args);
+                $.event.handlers.apply(context, args);
             }, execAsap === "execAsap" ? 0 : 100);
         }
     };
